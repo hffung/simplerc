@@ -18,20 +18,17 @@ Title <- "Title of your paper goes here"
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh///master?urlpath=rstudio)
 
-This repository contains the data and code for our paper:
-
-> Authors, (YYYY). _`r Title`_. Name of journal/book <https://doi.org/xxx/xxx>
-
-Our pre-print is online here:
-
-> Authors, (YYYY). _`r Title`_. Name of journal/book, Accessed `r format(Sys.Date(), "%d %b %Y")`. Online at <https://doi.org/xxx/xxx>
-
+Random walks can be used to model a wide range of phenomena, from animal movement to stock markets. This compendium contains all of the data, code, and other digital materials used in our paper, "Introduction to random walks". In this compendium, users will find the R tools we used to simulate, plot, and fit Gaussian random walks.
 
 ### How to cite
 
 Please cite this compendium as:
 
-> Authors, (`r format(Sys.Date(), "%Y")`). _Compendium of R code and data for `r Title`_. Accessed `r format(Sys.Date(), "%d %b %Y")`. Online at <https://doi.org/xxx/xxx>
+> Enthusiast, Randomwalk, (`r format(Sys.Date(), "%Y")`). _Compendium of R code and data for `Introduction to random walks`_. Accessed `r format(Sys.Date(), "%d %b %Y")`. Online at <https://github.com/hffung/simplerc>
+
+Our pre-print is online here:
+
+> Enthusiast, Randomwalk, (YYYY). _`Introduction to random walks`_. bioRxiv, Accessed `r format(Sys.Date(), "%d %b %Y")`. Online at <https://doi.org/random/walks>
 
 ## Contents
 
@@ -45,24 +42,25 @@ The **analysis** directory contains:
   - [:file\_folder: data](/analysis/data): Data used in the analysis.
   - [:file\_folder: figures](/analysis/figures): Plots and other
     illustrations
-  - [:file\_folder:
-    supplementary-materials](/analysis/supplementary-materials):
-    Supplementary materials including notes and other documents
-    prepared and collected during the analysis.
+  - [:file\_folder: templates](/analysis/templates):
+    Templates used to build this research compendium.
 
-## How to run in your broswer or download and run locally
+## How to run in your browser or download and run locally
 
 This research compendium has been developed using the statistical programming
 language R. To work with the compendium, you will need
 installed on your computer the [R software](https://cloud.r-project.org/)
 itself and optionally [RStudio Desktop](https://rstudio.com/products/rstudio/download/).
 
-You can download the compendium as a zip from from this URL:
-[master.zip](/archive/master.zip). After unzipping:
+You can download the compendium as a zip from this URL:
+[master.zip](https://github.com/hffung/simplerc/archive/refs/heads/main.zip). 
+After unzipping:
 - open the `.Rproj` file in RStudio
-- run `devtools::install()` to ensure you have the packages this analysis depends on (also listed in the
-[DESCRIPTION](/DESCRIPTION) file).
+- run `devtools::install()` to ensure you have the packages this analysis depends on (also listed in the [DESCRIPTION](/DESCRIPTION) file).
 - finally, open `analysis/paper/paper.Rmd` and knit to produce the `paper.docx`, or run `rmarkdown::render("analysis/paper/paper.Rmd")` in the R console
+
+## Usage
+Given a sequence of positions, the step lengths of the sequence is the difference between positions. The parameters of the Gaussian random walk ($\mu$ and $\sigma$) are the mean and standard deviation of the step lengths, respectively.
 
 ### Licenses
 
