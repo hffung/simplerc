@@ -55,8 +55,11 @@ itself and optionally [RStudio Desktop](https://rstudio.com/products/rstudio/dow
 You can download the compendium as a zip from this URL:
 [master.zip](https://github.com/hffung/simplerc/archive/refs/heads/main.zip). 
 After unzipping:
+
 - open the `.Rproj` file in RStudio
-- run `devtools::install()` to ensure you have the packages this analysis depends on (also listed in the [DESCRIPTION](/DESCRIPTION) file).
+
+- run `devtools::install()` to ensure you have the packages this analysis depends on (also listed in the [DESCRIPTION](/DESCRIPTION) file)
+
 - finally, open `analysis/paper/paper.Rmd` and knit to produce the `paper.docx`, or run `rmarkdown::render("analysis/paper/paper.Rmd")` in the R console
 
 ## Usage
@@ -68,7 +71,7 @@ Load the package
 library(simplerc)
 ```
 
-Run simulate_walk() to simulate a Gaussian walk with $\mu$ = 0.1 and $\sigma$ = 2 over 100 time steps.
+Run `simulate_walk()` to simulate a Gaussian walk with $\mu$ = 0.1 and $\sigma$ = 2 over 100 time steps.
 ``` {r}
 t <- 100
 mu <- 0.5
