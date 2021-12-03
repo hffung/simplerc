@@ -18,7 +18,7 @@ Title <- "Introduction to random walks"
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh///master?urlpath=rstudio)
 
-Random walks can be used to model a wide range of phenomena, from animal movement to stock markets. This compendium contains all of the data, code, and other digital materials used in our paper, "Introduction to random walks". In this compendium, we provide the R tools used to simulate, plot, and fit Gaussian random walks.
+Random walks can be used to model a wide range of phenomena, from animal movement to stock markets. This compendium contains all of the data, code, and other digital materials used in our paper, "Introduction to random walks". In this compendium, we provide the R tools to simulate, plot, and fit Gaussian random walks.
 
 ### How to cite
 
@@ -28,7 +28,7 @@ Please cite this compendium as:
 
 Our pre-print is online here:
 
-> Enthusiast, Randomwalk, (YYYY). _`Introduction to random walks`_. bioRxiv, Accessed `r format(Sys.Date(), "%d %b %Y")`. Online at <https://doi.org/random/walks>
+> Enthusiast, Randomwalk, (2021). _`Introduction to random walks`_. bioRxiv, Accessed `r format(Sys.Date(), "%d %b %Y")`. Online at <https://doi.org/random/walks>
 
 ## Contents
 
@@ -45,7 +45,7 @@ The **analysis** directory contains:
   - [:file\_folder: templates](/analysis/templates):
     Templates used to build this research compendium.
 
-## How to run in your browser or download and run locally
+## Installation
 
 This research compendium has been developed using the statistical programming
 language R. To work with the compendium, you will need

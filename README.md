@@ -8,8 +8,8 @@
 Random walks can be used to model a wide range of phenomena, from animal
 movement to stock markets. This compendium contains all of the data,
 code, and other digital materials used in our paper, “Introduction to
-random walks”. In this compendium, we provide the R tools used to
-simulate, plot, and fit Gaussian random walks.
+random walks”. In this compendium, we provide the R tools to simulate,
+plot, and fit Gaussian random walks.
 
 ### How to cite
 
@@ -21,7 +21,7 @@ Please cite this compendium as:
 
 Our pre-print is online here:
 
-> Enthusiast, Randomwalk, (YYYY). *`Introduction to random walks`*.
+> Enthusiast, Randomwalk, (2021). *`Introduction to random walks`*.
 > bioRxiv, Accessed 03 Dec 2021. Online at
 > <https://doi.org/random/walks>
 
@@ -40,7 +40,7 @@ The **analysis** directory contains:
 -   [:file\_folder: templates](/analysis/templates): Templates used to
     build this research compendium.
 
-## How to run in your browser or download and run locally
+## Installation
 
 This research compendium has been developed using the statistical
 programming language R. To work with the compendium, you will need
@@ -50,12 +50,17 @@ Desktop](https://rstudio.com/products/rstudio/download/).
 
 You can download the compendium as a zip from this URL:
 [master.zip](https://github.com/hffung/simplerc/archive/refs/heads/main.zip).
-After unzipping: - open the `.Rproj` file in RStudio - run
-`devtools::install()` to ensure you have the packages this analysis
-depends on (also listed in the [DESCRIPTION](/DESCRIPTION) file). -
-finally, open `analysis/paper/paper.Rmd` and knit to produce the
-`paper.docx`, or run `rmarkdown::render("analysis/paper/paper.Rmd")` in
-the R console
+After unzipping:
+
+-   open the `.Rproj` file in RStudio
+
+-   run `devtools::install()` to ensure you have the packages this
+    analysis depends on (also listed in the [DESCRIPTION](/DESCRIPTION)
+    file)
+
+-   finally, open `analysis/paper/paper.Rmd` and knit to produce the
+    `paper.docx`, or run `rmarkdown::render("analysis/paper/paper.Rmd")`
+    in the R console
 
 ## Usage
 
@@ -70,7 +75,7 @@ Load the package
 library(simplerc)
 ```
 
-Run simulate\_walk() to simulate a Gaussian walk with *μ* = 0.1 and *σ*
+Run `simulate_walk()` to simulate a Gaussian walk with *μ* = 0.1 and *σ*
 = 2 over 100 time steps.
 
 ``` r
@@ -95,8 +100,8 @@ Estimate parameters
 params <- fit_walk(walk)
 ```
 
-The fitted walk estimated parameters of *μ* = 0.4081409 and *σ* =
-1.7583897.
+The fitted walk estimated parameters of *μ* = 0.3371567 and *σ* =
+1.8626519.
 
 ### Licenses
 
